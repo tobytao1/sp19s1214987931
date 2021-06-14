@@ -6,6 +6,23 @@ public class LeapYear {
     /** Calls isLeapYear to print correct statement.
      *  @param  year to be analyzed
      */
+     /**
+     * Update this comment to describe what this method does.
+     * @source CS 61BL Lab 1
+     */
+    public static boolean isLeapYear(int year){
+      if (year%400==0) {
+        return true;
+        }
+      else if (year%4==0 && year%100 !=0) {
+        return true;
+
+      }
+      else{
+        return false;
+      }
+
+    }
     private static void checkLeapYear(int year) {
         if (isLeapYear(year)) {
             System.out.printf("%d is a leap year.\n", year);
@@ -30,4 +47,3 @@ public class LeapYear {
         }
     }
 }
-
